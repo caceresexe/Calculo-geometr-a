@@ -47,12 +47,13 @@ body {
     padding:10px;
     margin: auto;
     overflow: hidden;
+    max-width: 1000px;
 }
 
 /*boxes*/
 
 .box {
-    width: 340px;
+    width: 30%;
     height: 600px;
     border: 3px solid blueviolet;
     border-radius: 10px;
@@ -112,4 +113,35 @@ body {
 
 .box-main__btn:active{
 background-color: aquamarine;
+}
+
+/* Web responsive*/
+
+@media screen and (max-width:1022px ) {
+    .figures {
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:800px ) {
+    .figures {
+        width: 100%;
+    }
+    .box {
+        margin: 10px;
+    }
+}
+@media screen and (max-width:640px ) {
+
+    .box {
+        width: 90%;
+        margin: 20px ;
+        height: auto;
+    }
+    .header-title {
+        font-size: 25px;
+    }
+    .answer p{
+        font-size: 20px; ;
+    }
 }
